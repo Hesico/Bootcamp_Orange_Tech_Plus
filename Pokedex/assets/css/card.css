@@ -6,14 +6,12 @@
     max-width: 375px;
     max-height: 667px;
     color: #FFF; 
-    z-index: 1000; 
-}
-
-.cardPosition {
+    z-index: 1000;
     position: absolute;
     top: 0;
-    left: 0;
+    left: calc(50vw - 187px);
 }
+
 
 .cardMain{
     height: 50%;
@@ -69,10 +67,9 @@
 
 .cardMain .cardImg {
     align-self: center;
-    max-width: 240px;
+    max-height: 210px;
     position: relative;
-    bottom: -25px;
-    z-index: 1100;
+    z-index: 1100; 
 }
 
 .cardDetail {
@@ -81,3 +78,15 @@
     border-radius: 1.5rem 1.5rem 0 0;
 }
 
+@media screen and (min-width: 376px) {
+    .card {
+        top: 107px;
+        border-radius: 1rem;
+        border: 10px solid rgba(2, 1, 0, .3);
+        box-shadow: 0 0 10px #fef76e, 0 0 15px #fcf64c, 0 0 30px #faf519;  
+    }
+    .cardDetail{
+        border-radius: 1.5rem 1.5rem 1rem 1rem;
+    }
+
+}
